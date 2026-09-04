@@ -25,22 +25,6 @@ receiving multiplier of `51` at the emitter and approaches `1` at the edge.
 Place this module and synchronize it to registered jammer objects. It removes
 them without resetting unrelated TFAR modifiers or other active jammers.
 
-## Build
-
-Pack the contents of this repository root as `akh_jammer.pbo`, preserving its
-`$PBOPREFIX$`. The source `config.cpp`, `$PBOPREFIX$`, and `functions` directory
-are intentionally located directly in `_Jammer`. Put the resulting PBO in your
-mod's `addons` directory and sign it through your normal release pipeline.
-
-```text
-@YourMod/
-  addons/
-    akh_jammer.pbo
-    akh_jammer.pbo.yourkey.bisign
-  keys/
-    yourkey.bikey
-```
-
 ## Multiplayer behavior
 
 - Modules execute on the server.
@@ -49,9 +33,3 @@ mod's `addons` directory and sign it through your normal release pipeline.
 - Respawn and Zeus remote control are handled automatically.
 - Overlaps use the strongest jammer effect.
 - Existing TFAR range modifiers are preserved multiplicatively.
-
-## License note
-
-This is a clean rebuild informed by RadioJammerTFAR. That repository did not
-include an explicit license when inspected. Confirm redistribution terms before
-incorporating its original code or assets.
