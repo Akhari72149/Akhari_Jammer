@@ -21,7 +21,7 @@ class CfgFunctions {
     class AKH_Jammer {
         tag = "AKH_Jammer";
         class Core {
-            file = "\z\akhari\addons\akh_jammer\functions";
+            file = "\Akhari_Jammer\functions";
             class clientUpdate {};
             class moduleAdd {};
             class moduleRemove {};
