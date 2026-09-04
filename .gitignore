@@ -1,0 +1,6 @@
+*.rpt
+*.log
+*.pbo
+*.bisign
+.hemttout/
+

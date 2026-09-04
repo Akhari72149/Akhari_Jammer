@@ -1,0 +1,6 @@
+call AKH_Jammer_fnc_serverInit;
+
+// Examples (replace object names with editor variable names):
+// [jammer1, 1500, 50, objNull, true] call AKH_Jammer_fnc_registerJammer;
+// [jammer2, 2500, 30, antenna2, false] call AKH_Jammer_fnc_registerJammer;
+
