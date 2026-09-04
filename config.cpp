@@ -29,6 +29,7 @@ class CfgFunctions {
             class publishRegistry {};
             class receiveRegistry {};
             class registerJammer {};
+            class registerZenModules {};
             class removeJammer {};
         };
     };
@@ -47,7 +48,7 @@ class CfgVehicles {
 
     class AKH_Jammer_ModuleAdd: Module_F {
         scope = 2;
-        scopeCurator = 2;
+        scopeCurator = 0;
         displayName = "Add TFAR Jammer";
         category = "AKH_Jammer_Modules";
         icon = "\a3\Modules_F_Curator\Data\iconRadio_ca.paa";
@@ -94,7 +95,7 @@ class CfgVehicles {
 
     class AKH_Jammer_ModuleRemove: Module_F {
         scope = 2;
-        scopeCurator = 2;
+        scopeCurator = 0;
         displayName = "Remove TFAR Jammer";
         category = "AKH_Jammer_Modules";
         icon = "\a3\Modules_F_Curator\Data\iconRadio_ca.paa";
@@ -125,4 +126,3 @@ class CfgVehicles {
         };
     };
 };
-

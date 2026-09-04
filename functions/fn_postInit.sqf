@@ -1,6 +1,12 @@
 if (isServer) then {
     missionNamespace setVariable ["AKH_Jammer_registry", []];
     ["AKH_Jammer_requestRegistry", { call AKH_Jammer_fnc_publishRegistry }] call CBA_fnc_addEventHandler;
+    ["AKH_Jammer_registerRequest", {
+        _this call AKH_Jammer_fnc_registerJammer;
+    }] call CBA_fnc_addEventHandler;
+    ["AKH_Jammer_removeRequest", {
+        _this call AKH_Jammer_fnc_removeJammer;
+    }] call CBA_fnc_addEventHandler;
 };
 
 if (hasInterface) then {
@@ -16,5 +22,8 @@ if (hasInterface) then {
         ["AKH_Jammer_requestRegistry", []] call CBA_fnc_serverEvent;
         [] spawn AKH_Jammer_fnc_clientUpdate;
     };
-};
 
+    if (isClass (configFile >> "CfgPatches" >> "zen_custom_modules")) then {
+        [{call AKH_Jammer_fnc_registerZenModules}] call CBA_fnc_execNextFrame;
+    };
+};

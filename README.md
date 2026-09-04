@@ -11,14 +11,17 @@ Missions do not need a `description.ext`, init scripts, or RemoteExec entries.
 
 ## Modules
 
-Both modules are under **Systems > Modules > Akhari TFAR Jammer**.
+In Eden, both modules are under **Systems > Modules > Akhari TFAR Jammer**.
+With Zeus Enhanced loaded, they appear under the **Akhari TFAR Jammer** custom
+module category in Zeus.
 
 ### Add TFAR Jammer
 
-Place the module, synchronize it to one or more units, vehicles, or objects, and
-set radius and strength in its attributes. Each synchronized object emits until
-it is killed/deleted or removed. Radius is in metres. Strength `50` produces a
-receiving multiplier of `51` at the emitter and approaches `1` at the edge.
+In Eden, place the module, synchronize it to one or more objects, and set radius
+and strength in its attributes. In Zeus, drop the module directly onto an object;
+a dialog then asks for radius and strength. Each object emits until it is
+killed/deleted or removed. Radius is in metres. Strength `50` produces a receiving
+multiplier of `51` at the emitter and approaches `1` at the edge.
 
 ### Remove TFAR Jammer
 
