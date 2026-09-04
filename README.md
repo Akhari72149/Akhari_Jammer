@@ -27,9 +27,10 @@ them without resetting unrelated TFAR modifiers or other active jammers.
 
 ## Build
 
-Pack the contents of `addons/akh_jammer` as `akh_jammer.pbo`, preserving its
-`$PBOPREFIX$`. Put the PBO in your mod's `addons` directory and sign it through
-your normal release pipeline.
+Pack the contents of this repository root as `akh_jammer.pbo`, preserving its
+`$PBOPREFIX$`. The source `config.cpp`, `$PBOPREFIX$`, and `functions` directory
+are intentionally located directly in `_Jammer`. Put the resulting PBO in your
+mod's `addons` directory and sign it through your normal release pipeline.
 
 ```text
 @YourMod/
@@ -54,4 +55,3 @@ your normal release pipeline.
 This is a clean rebuild informed by RadioJammerTFAR. That repository did not
 include an explicit license when inspected. Confirm redistribution terms before
 incorporating its original code or assets.
-
